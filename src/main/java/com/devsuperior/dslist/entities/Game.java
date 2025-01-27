@@ -22,7 +22,7 @@ public class Game {
 	private Integer year; 
 	private String genre; 
 	private String platform; 
-	private String imUrl; 
+	private String imgUrl; 
 	private String shortDescription; 
 	private String longDescription; 
 	
@@ -30,13 +30,13 @@ public class Game {
 	}
 
 	public Game(Long id, String title, Integer year, String genre, String platform, String imUrl,
-			String shortDescription, String longDescription) {
+			String shortDescription, String longDescription, String imgUrl) {
 		this.id = id;
 		this.title = title;
 		this.year = year;
 		this.genre = genre;
 		this.platform = platform;
-		this.imUrl = imUrl;
+		this.imgUrl = imgUrl;
 		this.shortDescription = shortDescription;
 		this.longDescription = longDescription;
 	}
@@ -82,11 +82,11 @@ public class Game {
 	}
 
 	public String getImUrl() {
-		return imUrl;
+		return imgUrl;
 	}
 
 	public void setImUrl(String imUrl) {
-		this.imUrl = imUrl;
+		this.imgUrl = imUrl;
 	}
 
 	public String getShortDescription() {
